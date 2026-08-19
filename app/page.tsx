@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   type FormEvent,
@@ -136,7 +137,14 @@ export default function Home() {
       <header className="nav-wrap">
         <nav className={`nav container ${isScrolled ? 'is-scrolled' : ''}`}>
           <Link className="brand" href="#top" aria-label="NeoDev Studio home">
-            <img className="brand-logo" src="/brand/neodev-logo-mark.png" alt="NeoDev Studio" />
+            <Image
+              className="brand-logo"
+              src="/neodevweb/brand/neodev-logo-mark.png"
+              alt="NeoDev Studio"
+              width={32}
+              height={32}
+              priority
+            />
             <span className="brand-name-wrapper">
               <span className="brand-name">NeoDev<span className="muted-brand">Studio</span></span>
             </span>
@@ -410,7 +418,13 @@ export default function Home() {
 
       <footer className="footer container">
         <div className="brand footer-brand">
-          <img className="brand-logo" src="/brand/neodev-logo-mark.png" alt="NeoDev Studio" />
+          <Image
+            className="brand-logo"
+            src="/neodevweb/brand/neodev-logo-mark.png"
+            alt="NeoDev Studio"
+            width={32}
+            height={32}
+          />
           <span>NeoDev<span className="muted-brand">Studio</span></span>
         </div>
         <div className="footer-right">

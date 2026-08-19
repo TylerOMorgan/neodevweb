@@ -15,7 +15,7 @@ const tintToFilter: Record<NeoTint, string> = {
   cool: 'hue-rotate(28deg) saturate(1.1) brightness(1.04)',
 }
 
-const ANIMATION_URL = '/lottie/neodev-hero.json'
+const ANIMATION_URL = '/neodevweb/lottie/neodev-hero.json'
 
 const EXPECTED_SHA256 =
   '0b9da2bd58ad1b19e1b3eaad09755a8e68838e66d037d0e4b3d637c0f9a3c62b'
